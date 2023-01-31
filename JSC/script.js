@@ -1,7 +1,10 @@
 
+
+
 window.addEventListener('DOMContentLoaded', (event) => {
    
     // Navbar-ScrollEffect
+
     const nav = document.querySelector('nav');
 
     window.addEventListener('scroll', () =>{
@@ -40,7 +43,17 @@ window.addEventListener('DOMContentLoaded', (event) => {
         }
     }
 cargarapi();
-    
+  //AutoTypeMain
+
+    new TypeIt(".auto-type")
+    .type("José Chi", { delay: 2000 })
+    .delete(null,{ delay: 2000 })
+    .type("a Student", { delay: 2000 })
+    .delete(null,{ delay: 2000 })
+    .type("Coding",{ delay: 2000 })
+    .delete(null,{ delay: 2000 })
+    .type("Learning", { delay: 2000 })
+    .go();
 
 
 });

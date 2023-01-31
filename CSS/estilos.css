@@ -18,16 +18,16 @@ nav {
     display:flex;
     justify-content: flex-start;
     align-items: center;
-    padding:2% 5% 2% 5%;
+    padding: 3%;
     position: fixed;
     z-index: 3;
-    min-width: 100%;
+    width: 100%;
     transition: all ease-in-out 0.3s;
 }
 
 .nav.active{
     background-color: rgba(6, 49, 90, 0.185);
-    padding:1% 5% 1% 5%;
+    padding: 1% 1% 1% 3%;
 }
 
 .nav.active h2{
@@ -42,7 +42,7 @@ nav {
 /* Logo */
 
 nav h2{
-    color: rgb(255, 255, 255); 
+    color:white;
     font-family: 'Rubik', sans-serif;
     cursor:pointer;
     transition: all 0.3s;
@@ -78,7 +78,7 @@ nav .nav-links li a{
 /* Iconos */
 
 nav .icons{
-    margin-left: 33%;
+    margin-left: 37%;
 }
 
 nav .icons .icons-list li{
@@ -91,7 +91,7 @@ nav .icons .icons-list li{
 
 .icons a{
     text-decoration: none;
-    color: white;
+    color:white;
     font-family: 'Righteous', cursive;
     transition: all 0.1;
 }
@@ -105,29 +105,6 @@ nav .icons i:hover{
     transform: scale(1.2);
 }
 
-/* Section Hero Fondo */
-.video1{
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    min-height: 100%;
-    object-fit: cover;  
-    z-index: 1;
-
-}
-
-.capa1{
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    min-height: 100%;
-    background-color: #000000;
-    opacity: .8;
-    mix-blend-mode: overlay;
-    z-index: 1;
-}
 
 /* Presentacion */
 
@@ -138,40 +115,55 @@ nav .icons i:hover{
     height: 100vh;
     width: 100%;
     z-index: 2;
+    
+}
+.hero video{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover; 
+    z-index: 1;
+
+}
+
+.capa{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #000000;
+    opacity: .8;
+    mix-blend-mode: overlay;
+    z-index: 1;
+  
+    
 }
 
 .main-page{
     width: 100%;
     height: 100%;
     position: relative;
-    z-index: 1;
     text-align: center;
     font-family: 'Jost', sans-serif;
-    color:white;
     z-index: 2;
 }
+
 
 .main-page h1{
     font-size: 55px;
     margin: 0;
-    padding-top: 33vh;
-    text-shadow: #0a77a3;
-    text-decoration-style: dotted;
-    text-shadow:
-    0 0 10px rgb(241, 2, 2),
-    0 0 10px rgba(255, 0, 0, 0.925),
-    0 0 10px rgb(255, 0, 0),
-    0 0 10px rgb(127, 38, 38),
-    0 0 10px rgb(127, 38, 38),
-    0 0 10px rgb(127, 38, 38),
-    0 0 100px rgb(127, 56, 38),
-    0 0 10px rgb(127, 38, 38),
-    0 0 10px rgb(127, 38, 38);
+    padding-top: 35vh;
+    color:white;
+
 }
     
 .main-page h2{
     font-size: 30px;
     margin-top: 15px;
+    color:white;
     
 }
 
@@ -185,13 +177,13 @@ nav .icons i:hover{
     margin-top: 25px;
     padding: 10px 5px 10px 5px;
     cursor: pointer;
+    border: none;
     position: relative;
     overflow: hidden;
     transition: 0.3s all ease-in-out;
-    border:solid 2px rgb(246, 246, 247);
     font-family: 'Jost', sans-serif;
-    background-image: linear-gradient(to right top, #051937, #0c355a, #0f557f, #0a77a3, #009bc6);
-    color:white;
+    background-color: white;
+    color:black;
    
     
 }
@@ -201,7 +193,7 @@ nav .icons i:hover{
     width: 100%;
     height: 100%;
     bottom: -50px;
-    background-color:white;
+    background-color:rgb(196, 8, 8);
     position: absolute;
     z-index: 1;
     transition: .3s ease-in-out all;
@@ -210,8 +202,6 @@ nav .icons i:hover{
 .boton span{
     z-index: 2;
     transition: .1s ease-in-out all;
-
-    
 }
 
 .main-page .boton:hover::after{
@@ -219,18 +209,10 @@ nav .icons i:hover{
     
 }
 .main-page .boton:hover{
-    border: white;
-    color:black;
-    box-shadow:
-    0 0 10px rgb(241, 2, 2),
-    0 0 10px rgba(255, 0, 0, 0.925),
-    0 0 10px rgb(255, 0, 0),
-    0 0 10px rgb(127, 38, 38),
-    0 0 10px rgb(127, 38, 38),
-    0 0 10px rgb(127, 38, 38),
-    0 0 100px rgb(127, 56, 38),
-    0 0 10px rgb(127, 38, 38),
-    0 0 10px rgb(127, 38, 38);
+    
+    color:white;
+    border:solid white 2px;
+    
 }
 
 /* BotonScrollDown */
@@ -270,16 +252,7 @@ nav .icons i:hover{
 }
 
 .hero a:hover{
-    box-shadow:
-    0 0 10px rgb(241, 2, 2),
-    0 0 10px rgba(255, 0, 0, 0.925),
-    0 0 10px rgb(255, 0, 0),
-    0 0 10px rgb(127, 38, 38),
-    0 0 10px rgb(127, 38, 38),
-    0 0 10px rgb(127, 38, 38),
-    0 0 100px rgb(127, 56, 38),
-    0 0 10px rgb(127, 38, 38),
-    0 0 10px rgb(127, 38, 38);
+    
 }
 
 @keyframes scroll-down {
@@ -305,7 +278,7 @@ nav .icons i:hover{
 
 .github-projects{
     width: 100%;
-    height: auto;
+    height: 100vh;
     position: relative;
     z-index: 2;
     display: flex;
@@ -398,12 +371,12 @@ nav .icons i:hover{
 .description-tittle{
     font-size: 20px;
     margin-bottom: 20px;
-    margin-top
+    
 }
 
 .description-content{
     text-align: center;
-    margin
+    
 }
 
 .cards:hover .description{
